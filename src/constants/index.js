@@ -116,8 +116,8 @@ const technologies = [
 
 const experiences = [
 	{
-		title: "React.js Developer",
-		company_name: "Starbucks",
+		title: "Private Tutor",
+		company_name: "Self-Employed",
 		icon: starbucks,
 		iconBg: "#383E56",
 		date: "March 2020 - April 2021",
@@ -129,8 +129,8 @@ const experiences = [
 		],
 	},
 	{
-		title: "React Native Developer",
-		company_name: "Tesla",
+		title: "Repair Technician",
+		company_name: "Rama Centre",
 		icon: tesla,
 		iconBg: "#E6DEDD",
 		date: "Jan 2021 - Feb 2022",
@@ -142,8 +142,8 @@ const experiences = [
 		],
 	},
 	{
-		title: "Web Developer",
-		company_name: "Shopify",
+		title: "Event Coordinator",
+		company_name: "Sheridan Community Services",
 		icon: shopify,
 		iconBg: "#383E56",
 		date: "Jan 2022 - Jan 2023",
@@ -155,8 +155,8 @@ const experiences = [
 		],
 	},
 	{
-		title: "Full stack Developer",
-		company_name: "Meta",
+		title: "Outreach Sub-Team",
+		company_name: "McMaster Mars Rover Team",
 		icon: meta,
 		iconBg: "#E6DEDD",
 		date: "Jan 2023 - Present",
