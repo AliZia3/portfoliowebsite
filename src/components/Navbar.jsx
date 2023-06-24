@@ -7,15 +7,15 @@ import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
-	const [ active, setActive ] = useState("");
-	const [ toggle, setToggle ] = useState(false);
+	const [active, setActive] = useState("");
+	const [toggle, setToggle] = useState(false);
 
 	return (
 		// Full Nav Bar
 		<nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`} >
 			{/* Navbar Content */}
 			<div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
-				
+
 				{/* Logo */}
 				<Link to="/" className="flex items-center" onClick={() => { setActive(""); window.scroll(0, 0); }} >
 					<img src={logo} alt="logo" className="w-12 h-12 object-contain" />
@@ -29,7 +29,7 @@ const Navbar = () => {
 						</li>
 					))}
 				</ul>
-				
+
 				{/* Burger Menu */}
 				<div className="sm:hidden flex flex-1 justify-end items-center">
 					<img src={toggle ? close : menu} alt='menu' className="w-[28px] h-[28px] object-contain cursor-pointer" onClick={() => setToggle(!toggle)} />
@@ -46,7 +46,7 @@ const Navbar = () => {
 						</ul>
 					</div>
 				</div>
-				
+
 			</div>
 		</nav>
 	);

@@ -120,8 +120,8 @@ const technologies = [
 
 const experiences = [
 	{
-		title: "Private Tutor",
-		company_name: "Self-Employed",
+		title: "Repair Technician",
+		company_name: "Rama Centre",
 		icon: starbucks,
 		iconBg: "#383E56",
 		date: "March 2020 - April 2021",
@@ -133,8 +133,8 @@ const experiences = [
 		],
 	},
 	{
-		title: "Repair Technician",
-		company_name: "Rama Centre",
+		title: "Event Coordinator",
+		company_name: "Sheridan Community Services",
 		icon: tesla,
 		iconBg: "#E6DEDD",
 		date: "Jan 2021 - Feb 2022",
@@ -146,8 +146,8 @@ const experiences = [
 		],
 	},
 	{
-		title: "Event Coordinator",
-		company_name: "Sheridan Community Services",
+		title: "Outreach Sub-Team",
+		company_name: "McMaster Mars Rover Team",
 		icon: shopify,
 		iconBg: "#383E56",
 		date: "Jan 2022 - Jan 2023",
@@ -159,8 +159,8 @@ const experiences = [
 		],
 	},
 	{
-		title: "Outreach Sub-Team",
-		company_name: "McMaster Mars Rover Team",
+		title: "Vice President of Events",
+		company_name: "Institute of Transportation Engineers McMaster Student Chapter",
 		icon: meta,
 		iconBg: "#E6DEDD",
 		date: "Jan 2023 - Present",
