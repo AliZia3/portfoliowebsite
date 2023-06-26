@@ -56,18 +56,11 @@ const Contact = () => {
 				<h3 className={styles.sectionHeadText}>Contact</h3>
 
 				<form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
-					<label className='flex flex-col'>
-						<input type='text' name='name' value={form.name} onChange={handleChange} placeholder='Name' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'></input>
-					</label>
 
-					<label className='flex flex-col'>
-						<input type='email' name='email' value={form.email} onChange={handleChange} placeholder='Email' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'></input>
-					</label>
-
-					<label className='flex flex-col'>
-						<textarea rows="7" name='message' value={form.message} onChange={handleChange} placeholder='Message' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'></textarea>
-					</label>
-
+					<input type='text' name='name' value={form.name} onChange={handleChange} placeholder='Name' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'></input>				
+					<input type='email' name='email' value={form.email} onChange={handleChange} placeholder='Email' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'></input>
+					<textarea rows="7" cols='10' name='message' value={form.message} onChange={handleChange} placeholder='Message' className='resize-none bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'></textarea>
+					
 					<button type='submit' className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>
 						{loading ? 'Sending...' : 'Send'}
 					</button>
