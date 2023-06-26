@@ -18,6 +18,7 @@ const Computers = ({ isMobile }) => {
 }
 
 const ComputersCanvas = () => {
+	// Used so computer can change size when screen size changes
 	const [isMobile, setIsMobile] = useState(false)
 
 	useEffect(() => {
