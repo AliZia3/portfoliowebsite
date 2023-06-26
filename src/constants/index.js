@@ -141,7 +141,7 @@ const experiences = [
 			"",
 			"",
 			"",
-			""
+			"",
 			// "Collaborated with the administration team to streamline communication processes, resulting in a 20% increase in efficiency and timely decision-making",
 			// "Successfully expanded the team's network within the McMaster community by organizing information sessions and workshops, leading to a 30% increase in team membership",
 			// "Implemented cost-effective logistics strategies for events, such as the Ontario Rover Rally, resulting in a 15% reduction in expenses while maintaining high-quality experiences for participants",
@@ -150,17 +150,13 @@ const experiences = [
 	},
 	{
 		title: "Vice President of Events",
-		company_name: "Institute of Transportation Engineers McMaster Student Chapter",
+		company_name:
+			"Institute of Transportation Engineers McMaster Student Chapter",
 		icon: ite,
 		iconBg: "#E6DEDD",
 		date: "June 2023 - Present",
-		points: [
-			"",
-			"",
-			"",
-			"",
-		],
-	}
+		points: ["", "", "", ""],
+	},
 ];
 
 const projects = [
