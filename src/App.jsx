@@ -9,25 +9,25 @@ import {
 	Projects,
 	StarsCanvas,
 	Links,
+	Footer
 } from "./components";
 
 const App = () => {
 	return (
 		<BrowserRouter>
 			<div className="relative z-0 bg-primary">
-				<div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-					<Navbar />
-					<Hero />
-				</div>
-				<Links />
+				<Navbar />
+				<Hero />
 				<About />
 				<Experience />
-				<Tech />
-				<Projects />
+				{/* <Tech /> */}
+				{/* <Projects /> */}
 				<div className="relative z-0">
-					<Contact />
 					<StarsCanvas />
+					<Contact />
+					{/* <Links /> */}
 				</div>
+				<Footer />
 			</div>
 		</BrowserRouter>
 	);

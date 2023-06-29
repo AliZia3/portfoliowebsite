@@ -22,6 +22,10 @@ import {
 	jobit,
 	tripguide,
 	threejs,
+	FaGithub,
+	FaLinkedin,
+	BiSolidFileDoc,
+	HiOutlineMail
 } from "../assets";
 
 export const navLinks = [
@@ -43,26 +47,96 @@ export const navLinks = [
 	},
 ];
 
-const services = [
+export const socialLinks = [
 	{
-		title: "Web Developer",
-		icon: web,
+		id: 'linkedin',
+		title: 'LinkedIn',
+		icon: FaLinkedin,
+		href: 'https://www.linkedin.com/in/m-alizia/',
 	},
 	{
-		title: "React Native Developer",
-		icon: mobile,
+		id: 'github',
+		title: 'GitHub',
+		icon: FaGithub,
+		href: 'https://github.com/AliZia3'
 	},
 	{
-		title: "Backend Developer",
-		icon: backend,
+		id: 'mail',
+		title: 'Mail',
+		icon: HiOutlineMail,
+		href: 'mailto:alizia0217@gmail.com'
 	},
 	{
-		title: "Content Creator",
-		icon: creator,
+		id: 'resume',
+		title: 'Resume',
+		icon: BiSolidFileDoc,
+		href: '/resume.pdf',
+		download: true,
+	}
+];
+
+export const interests = [
+	{
+		title: "Data Science & Analytics",
+		icon: null,
+	},
+	{
+		title: "Full Stack Development",
+		icon: null,
+	},
+	{
+		title: "Robotics & Automation",
+		icon: null,
+	},
+	{
+		title: "",
+		icon: null,
 	},
 ];
 
-const technologies = [
+export const experiences = [
+	{
+		title: "Repair Technician",
+		company_name: "Rama Centre",
+		icon: ramacentre,
+		iconBg: "#383E56",
+		date: "May 2022 - August 2022",
+		points: [
+			"Managed 10+ repairs daily and achieved a 100% satisfaction rate in repair efficiency and on-time completion",
+			"Effectively identified and resolved a wide range of technical issues, reducing rework time by 35%",
+			"Proactively identified and resolved potential issues in repair execution, boosting repair success rates by 85%",
+			"Maintained efficient documentation of repair processes, providing valuable data for analysis and improvement, resulting in a 15% reduction in recurring repair issues",
+		],
+	},
+	{
+		title: "Outreach Sub-Team",
+		company_name: "McMaster Mars Rover Team",
+		icon: mmrt,
+		iconBg: "#E6DEDD",
+		date: "June 2023 - Present",
+		points: [
+			"",
+			"",
+			"",
+			"",
+			// "Collaborated with the administration team to streamline communication processes, resulting in a 20% increase in efficiency and timely decision-making",
+			// "Successfully expanded the team's network within the McMaster community by organizing information sessions and workshops, leading to a 30% increase in team membership",
+			// "Implemented cost-effective logistics strategies for events, such as the Ontario Rover Rally, resulting in a 15% reduction in expenses while maintaining high-quality experiences for participants",
+			// "Proficiently utilized Microsoft 365, Google, and other event organizing platforms to ensure smooth coordination and seamless execution of team activities and events.",
+		],
+	},
+	{
+		title: "Vice President of Events",
+		company_name:
+			"Institute of Transportation Engineers McMaster Student Chapter",
+		icon: ite,
+		iconBg: "#E6DEDD",
+		date: "June 2023 - Present",
+		points: ["", "", "", ""],
+	},
+];
+
+export const technologies = [
 	{
 		name: "HTML 5",
 		icon: html,
@@ -117,49 +191,125 @@ const technologies = [
 	},
 ];
 
-const experiences = [
+export const pythonProjects = [
 	{
-		title: "Repair Technician",
-		company_name: "Rama Centre",
-		icon: ramacentre,
-		iconBg: "#383E56",
-		date: "May 2022 - August 2022",
-		points: [
-			"Managed 10+ repairs daily and achieved a 100% satisfaction rate in repair efficiency and on-time completion",
-			"Effectively identified and resolved a wide range of technical issues, reducing rework time by 35%",
-			"Proactively identified and resolved potential issues in repair execution, boosting repair success rates by 85%",
-			"Maintained efficient documentation of repair processes, providing valuable data for analysis and improvement, resulting in a 15% reduction in recurring repair issues",
-		],
+		name: "Premier League Win Predictor",
+		description: '',
+		image: '',
+		source_code_link: '',
 	},
 	{
-		title: "Outreach Sub-Team",
-		company_name: "McMaster Mars Rover Team",
-		icon: mmrt,
-		iconBg: "#E6DEDD",
-		date: "June 2023 - Present",
-		points: [
-			"",
-			"",
-			"",
-			"",
-			// "Collaborated with the administration team to streamline communication processes, resulting in a 20% increase in efficiency and timely decision-making",
-			// "Successfully expanded the team's network within the McMaster community by organizing information sessions and workshops, leading to a 30% increase in team membership",
-			// "Implemented cost-effective logistics strategies for events, such as the Ontario Rover Rally, resulting in a 15% reduction in expenses while maintaining high-quality experiences for participants",
-			// "Proficiently utilized Microsoft 365, Google, and other event organizing platforms to ensure smooth coordination and seamless execution of team activities and events.",
-		],
+		name: "Image Classifier",
+		description: '',
+		image: '',
+		source_code_link: '',
 	},
 	{
-		title: "Vice President of Events",
-		company_name:
-			"Institute of Transportation Engineers McMaster Student Chapter",
-		icon: ite,
-		iconBg: "#E6DEDD",
-		date: "June 2023 - Present",
-		points: ["", "", "", ""],
+		name: "Drive Test Availablity Finder",
+		description: '',
+		image: '',
+		source_code_link: '',
 	},
-];
+	{
+		name: "Pathfinder Visualizer",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "App Runner",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "Part Manager",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "Recylcing System",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "Image Editor",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "Video Downloader",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+]
 
-const projects = [
+export const webProjects = [
+	{
+		name: "MERNstagram",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "EasyChat",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "MiniGamesWeb",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "Task Tracker",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "Weather",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "Movie Island",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+]
+
+export const javaProjects = [
+	{
+		name: "JobIt - Job Application organizer",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "Island Generator",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+	{
+		name: "Piraten Kapern Simulator",
+		description: '',
+		image: '',
+		source_code_link: '',
+	},
+]
+
+
+export const projects = [
 	{
 		name: "Car Rent",
 		description:
@@ -224,5 +374,3 @@ const projects = [
 		source_code_link: "https://github.com/",
 	},
 ];
-
-export { services, technologies, experiences, projects };

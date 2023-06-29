@@ -1,36 +1,46 @@
-import logo from "./logo.svg";
+import logo from "./nav/logo.png";
+import menu from "./nav/menu.svg";
+import close from "./nav/close.svg";
+import background from "./background/Hall_Background.mp4"
+import background1 from "./background/herobg.png"
+
+
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import css from "./skills/css.png";
+import docker from "./skills/docker.png";
+import figma from "./skills/figma.png";
+import git from "./skills/git.png";
+import html from "./skills/html.png";
+import javascript from "./skills/javascript.png";
+import mongodb from "./skills/mongodb.png";
+import nodejs from "./skills/nodejs.png";
+import reactjs from "./skills/reactjs.png";
+import redux from "./skills/redux.png";
+import tailwind from "./skills/tailwind.png";
+import typescript from "./skills/typescript.png";
+import threejs from "./skills/threejs.svg";
 
 import ite from "./company/ite.png";
 import mmrt from "./company/mmrt.jpg";
 import ramacentre from "./company/ramacentre.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import github from "./projects/github.png";
+import carrent from "./projects/carrent.png";
+import jobit from "./projects/jobit.png";
+import tripguide from "./projects/tripguide.png";
+
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { BiSolidFileDoc } from 'react-icons/bi'
+import { HiOutlineMail } from 'react-icons/hi'
 
 export {
   logo,
+  background,
+  background1,
   backend,
   creator,
   mobile,
@@ -57,4 +67,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  FaGithub,
+  FaLinkedin,
+  BiSolidFileDoc,
+  HiOutlineMail
 };
