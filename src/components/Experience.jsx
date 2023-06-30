@@ -45,7 +45,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
 	return (
-		<>
+		<div className="flex flex-col justify-center items-center">
 			<motion.div variants={textVariant()}>
 				<h2 className={styles.sectionHeadText}>Work Experience</h2>
 			</motion.div>
@@ -57,7 +57,7 @@ const Experience = () => {
 					))}
 				</VerticalTimeline>
 			</div>
-		</>
+		</div>
 
 
 	);

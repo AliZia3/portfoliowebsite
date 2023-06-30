@@ -1,9 +1,8 @@
 import {
-	mobile,
-	backend,
-	creator,
-	web,
 	javascript,
+	python,
+	java,
+	junit,
 	typescript,
 	html,
 	css,
@@ -12,6 +11,7 @@ import {
 	tailwind,
 	nodejs,
 	mongodb,
+	mysql,
 	git,
 	figma,
 	docker,
@@ -25,7 +25,8 @@ import {
 	FaGithub,
 	FaLinkedin,
 	BiSolidFileDoc,
-	HiOutlineMail
+	HiOutlineMail,
+	HiDocumentDownload,
 } from "../assets";
 
 export const navLinks = [
@@ -69,28 +70,62 @@ export const socialLinks = [
 	{
 		id: 'resume',
 		title: 'Resume',
-		icon: BiSolidFileDoc,
+		icon: HiDocumentDownload,
 		href: '/resume.pdf',
 		download: true,
 	}
 ];
 
-export const interests = [
+export const skills = [
 	{
-		title: "Data Science & Analytics",
-		icon: null,
+		id:1,
+		name: "Python",
+		icon: python,
 	},
 	{
-		title: "Full Stack Development",
-		icon: null,
+		id:2,
+		name: "Java",
+		icon: java,
 	},
 	{
-		title: "Robotics & Automation",
-		icon: null,
+		id:3,
+		name: "JavaScript",
+		icon: javascript,
 	},
 	{
-		title: "",
-		icon: null,
+		id:4,
+		name: "React",
+		icon: reactjs,
+	},
+	{
+		id:5,
+		name: "Node.js",
+		icon: nodejs,
+	},
+	{
+		id:6,
+		name: "MySQL",
+		icon: mysql,
+	},
+	{
+		id:7,
+		name: "Git",
+		icon: git,
+	},
+	{
+		id:8,
+		name: "JUnit",
+		icon: junit,
+	},
+	{
+		id:9,
+		name: "HTML",
+		icon: html,
+	},
+	{
+		id:10,
+		name: "CSS",
+		icon: css,
 	},
 ];
 

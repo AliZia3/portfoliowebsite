@@ -4,12 +4,6 @@ import close from "./nav/close.svg";
 import background from "./background/Hall_Background.mp4"
 import background1 from "./background/herobg.png"
 
-
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-
 import css from "./skills/css.png";
 import docker from "./skills/docker.png";
 import figma from "./skills/figma.png";
@@ -23,6 +17,10 @@ import redux from "./skills/redux.png";
 import tailwind from "./skills/tailwind.png";
 import typescript from "./skills/typescript.png";
 import threejs from "./skills/threejs.svg";
+import java from "./skills/java.png";
+import python from "./skills/python.png";
+import junit from "./skills/junit.png";
+import mysql from "./skills/mysql.png";
 
 import ite from "./company/ite.png";
 import mmrt from "./company/mmrt.jpg";
@@ -35,16 +33,13 @@ import tripguide from "./projects/tripguide.png";
 
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { BiSolidFileDoc } from 'react-icons/bi'
-import { HiOutlineMail } from 'react-icons/hi'
+import { HiOutlineMail, HiDocumentDownload } from 'react-icons/hi'
+import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 export {
   logo,
   background,
   background1,
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,
@@ -54,6 +49,10 @@ export {
   git,
   html,
   javascript,
+  python,
+  java,
+  junit,
+  mysql,
   mongodb,
   nodejs,
   reactjs,
@@ -70,5 +69,7 @@ export {
   FaGithub,
   FaLinkedin,
   BiSolidFileDoc,
-  HiOutlineMail
+  HiOutlineMail,
+  BsFillPersonLinesFill,
+  HiDocumentDownload,
 };
