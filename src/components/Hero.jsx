@@ -8,7 +8,7 @@ import { socialLinks } from "../constants";
 const Hero = () => {
 	return (
 		// Entire hero section
-		<section className="relative w-full h-screen mx-auto" id="hero">
+		<section className="relative w-full h-screen mx-auto">
 
 			<video className="w-full h-screen object-cover" autoPlay loop muted>
 				<source type="video/mp4" src={background} />

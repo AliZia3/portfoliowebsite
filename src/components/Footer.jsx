@@ -2,13 +2,15 @@ import React from 'react'
 import { styles } from '../styles'
 import { socialLinks } from '../constants'
 import { logo } from '../assets'
+import { motion } from 'framer-motion'
+import { slideIn } from '../utils/motion'
 
 const Footer = () => {
 	return (
 		// bg-slate-600
 		<footer className={`${styles.paddingX} bg-primary w-full sm:h-[68px] p-5 flex items-center justify-between`}>
 			
-			<div className='w-full flex flex-col gap-7 sm:flex-row justify-between items-center max-w-7x1'>
+			<motion.div variants={slideIn('left', 'spring', 0.05, 1)} initial="hidden" whileInView="show" className='w-full flex flex-col gap-7 sm:flex-row justify-between items-center max-w-7x1'>
 				
 				<ul className="flex gap-10">
 					{socialLinks.map(({id,icon, href, download}) => (
@@ -24,11 +26,7 @@ const Footer = () => {
 					<img src={logo} alt="logo" className="w-12 h-12 object-contain" /> 
 					<p className='text-[22px]'>© Ali Zia 2022</p> 
 				</div>
-			</div>
-
-			
-			
-
+			</motion.div>
 		</footer>
 		
 	)
