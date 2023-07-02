@@ -80,6 +80,31 @@ export const slideIn = (direction, type, delay, duration) => {
 	};
 };
 
+export const slideOut = (direction, type, delay, duration) => {
+	return {
+		hidden: {
+			x: 0,
+			y: 0,
+		},
+		show: {
+			x:
+				direction === "left"
+					? "-100%"
+					: direction === "right"
+					? "100%"
+					: 0,
+			y: direction === "up" ? "-100%" : direction === "down" ? "100%" : 0,
+			transition: {
+				type: type,
+				delay: delay,
+				duration: duration,
+				ease: "easeOut",
+			},
+		},
+	};
+};
+
+
 export const staggerContainer = (staggerChildren, delayChildren) => {
 	return {
 		hidden: {},

@@ -50,25 +50,25 @@ export const navLinks = [
 
 export const socialLinks = [
 	{
-		id: 'linkedin',
+		id: 1,
 		title: 'LinkedIn',
 		icon: FaLinkedin,
 		href: 'https://www.linkedin.com/in/m-alizia/',
 	},
 	{
-		id: 'github',
+		id: 2,
 		title: 'GitHub',
 		icon: FaGithub,
 		href: 'https://github.com/AliZia3'
 	},
 	{
-		id: 'mail',
+		id: 3,
 		title: 'Mail',
 		icon: HiOutlineMail,
 		href: 'mailto:alizia0217@gmail.com'
 	},
 	{
-		id: 'resume',
+		id: 4,
 		title: 'Resume',
 		icon: HiDocumentDownload,
 		href: '/resume.pdf',

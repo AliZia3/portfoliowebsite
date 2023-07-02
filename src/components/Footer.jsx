@@ -8,7 +8,7 @@ import { slideIn } from '../utils/motion'
 const Footer = () => {
 	return (
 		// bg-slate-600
-		<footer className={`${styles.paddingX} bg-primary w-full sm:h-[68px] p-5 flex items-center justify-between`}>
+		<footer id='footer' className={`${styles.paddingX} bg-primary w-full sm:h-[68px] p-5 flex items-center justify-between`}>
 			
 			<motion.div variants={slideIn('left', 'spring', 0.05, 1)} initial="hidden" whileInView="show" className='w-full flex flex-col gap-7 sm:flex-row justify-between items-center max-w-7x1'>
 				

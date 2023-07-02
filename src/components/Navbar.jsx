@@ -11,23 +11,6 @@ const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 
-
-	// useEffect(() => {
-	// 	const onScroll = () => {
-	// 	  const heroSection = document.getElementById('hero');
-	// 	  if (heroSection) {
-	// 		const rect = heroSection.getBoundingClientRect();
-	// 		setScrolled(rect.top >= 0);
-	// 	  }
-	// 	};
-
-	// 	window.addEventListener('scroll', onScroll);
-	// 	return () => {
-	// 	  window.removeEventListener('scroll', onScroll);
-	// 	};
-	//   }, [])
-
-	// Main
 	useEffect(() => {
 		const onScroll = () => {
 			if (window.scrollY > 20) {
@@ -42,21 +25,6 @@ const Navbar = () => {
 			window.removeEventListener('scroll', onScroll);
 		};
 	}, []);
-
-	// useEffect(() => {
-	// 	const onScroll = () => {
-	// 	  const heroSection = document.getElementById("hero");
-	// 	  if (heroSection) {
-	// 		const { bottom } = heroSection.getBoundingClientRect();
-	// 		setScrolled(bottom > 80);
-	// 	  }
-	// 	};
-	
-	// 	window.addEventListener("scroll", onScroll);
-	// 	return () => {
-	// 	  window.removeEventListener("scroll", onScroll);
-	// 	};
-	//   }, []);
 
 
 	return (
