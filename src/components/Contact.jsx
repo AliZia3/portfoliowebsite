@@ -50,13 +50,12 @@ const Contact = () => {
 
 	
 	return (
-		<div className='xl:flex-row flex-col-reverse flex gap-10 overflow-hidden w-full'>
+		<div id='Contact' className='xl:flex-row flex-col-reverse flex gap-10 overflow-hidden w-full'>
 			<motion.div variants={slideIn('left', 'tween', 0.2, 1)} initial="hidden" whileInView="show" className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
 				<p className={styles.sectionSubText}>Get in Touch</p>
 				<h3 className={styles.sectionHeadText}>Contact</h3>
 
 				<form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
-
 					<input type='text' name='name' value={form.name} onChange={handleChange} placeholder='Name' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'></input>				
 					<input type='email' name='email' value={form.email} onChange={handleChange} placeholder='Email' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'></input>
 					<textarea rows="7" cols='10' name='message' value={form.message} onChange={handleChange} placeholder='Message' className='resize-none bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'></textarea>

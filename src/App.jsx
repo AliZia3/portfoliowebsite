@@ -11,7 +11,7 @@ import {
 	Footer
 } from "./components";
 
-const App = () => {
+const App = () => { 
 	return (
 		<BrowserRouter>
 			<div className="relative z-0 bg-primary">

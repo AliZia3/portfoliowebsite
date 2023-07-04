@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+
 
 const Navbar = () => {
 	const [active, setActive] = useState("");
@@ -25,6 +26,40 @@ const Navbar = () => {
 			window.removeEventListener('scroll', onScroll);
 		};
 	}, []);
+
+	useEffect(() => {
+		const aboutSection = document.getElementById("About");
+		const experienceSection = document.getElementById("Experience");
+		const projectsSection = document.getElementById("Projects");
+		const contactSection = document.getElementById("Contact");
+		const sections = [aboutSection, experienceSection, projectsSection, contactSection]
+		const handleScroll = () => {
+			if(window.scrollY < 20){
+				setActive('')
+			}
+		}
+
+		const observer = new IntersectionObserver(([entry])=>{
+			if (entry.isIntersecting){
+				setActive(entry.target.id)
+			}
+		},{
+			threshold: 0.2,
+		})
+
+		sections.forEach(section=>{
+			observer.observe(section)
+		})
+
+		window.addEventListener('scroll', handleScroll)
+	
+	  	return () => {
+			sections.forEach(section=>{
+				observer.unobserve(section)
+			})
+			window.removeEventListener('scroll', handleScroll)
+	  	}
+	}, [])
 
 
 	return (

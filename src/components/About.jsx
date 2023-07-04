@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
@@ -10,25 +10,25 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { BallCanvas } from "./canvas";
 
-const ServiceCard = ({ id, name, icon }) => {
-	return (
-		// Cards
-		<Tilt className="xs:w-[180px] w-full">
-			<motion.div variants={fadeIn("right", "spring", 0.2 * id, 0.75)} className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card" >
-				<div options={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary rounded-[20px] py-5 px-12 flex justify-evenly items-center flex-col" >
-					<img src={icon} alt={name} className="w-16 h-16 object-contain" />
-					<h3 className="text-white text-[20px] font-bold text-center">
-						{name}
-					</h3>
-				</div>
-			</motion.div>
-		</Tilt>
-	);
-};
+// const ServiceCard = ({ id, name, icon }) => {
+// 	return (
+// 		// Cards
+// 		<Tilt className="xs:w-[180px] w-full">
+// 			<motion.div variants={fadeIn("right", "spring", 0.2 * id, 0.75)} className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card" >
+// 				<div options={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary rounded-[20px] py-5 px-12 flex justify-evenly items-center flex-col" >
+// 					<img src={icon} alt={name} className="w-16 h-16 object-contain" />
+// 					<h3 className="text-white text-[20px] font-bold text-center">
+// 						{name}
+// 					</h3>
+// 				</div>
+// 			</motion.div>
+// 		</Tilt>
+// 	);
+// };
 
 const About = () => {
 	return (
-		<div className="mt-3 flex flex-col items-center">
+		<section id='About' className="mt-3 flex flex-col items-center">
 			{/* Text */}
 			<motion.div variants={textVariant()} initial="hidden" whileInView="show" >
 				<h2 className={styles.sectionHeadText}>About Me</h2>
@@ -62,7 +62,7 @@ const About = () => {
 					</div>
 				))}
 			</motion.div>
-		</div>
+		</section>
 	);
 };
 

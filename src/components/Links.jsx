@@ -7,8 +7,8 @@ const Links = () => {
 	const [heroIsIntersecting, setIsHeroInteresecting] = useState(true);
 
 	useEffect(() => {
-		const heroSection = document.getElementById("hero");
-		const footerSection = document.getElementById('footer')
+		const heroSection = document.getElementById("Hero");
+		const footerSection = document.getElementById('Footer')
 		const sections = [heroSection, footerSection]
 
 		const observer = new IntersectionObserver(([entry]) => {

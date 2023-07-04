@@ -45,7 +45,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
 	return (
-		<div className="flex flex-col justify-center items-center">
+		<div id='Experience' className="flex flex-col justify-center items-center">
 			<motion.div variants={textVariant()} initial="hidden" whileInView="show" >
 				<h2 className={styles.sectionHeadText}>Work Experience</h2>
 			</motion.div>
