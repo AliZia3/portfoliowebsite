@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { github, laptop } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { pythonProjects, javaProjects, webProjects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant, slideIn } from "../utils/motion";
 
 
 const ProjectCard = ({ index, name, description, image, source_code_link, demo_link, tags }) => {
@@ -25,15 +25,15 @@ const ProjectCard = ({ index, name, description, image, source_code_link, demo_l
 				{/* Card Image */}
 				<div className="relative h-[180px]">
 					{/* Main Image */}
-					<img src={image} alt={name} className={`${hovered ? 'opacity-5' : ''} w-full h-full rounded-2xl duration-300`} />
+					<img src={image} alt={name} className={`${hovered ? 'opacity-5' : ''} w-full h-full rounded-2xl duration-200`} />
 					
 					{/* Links when hovered */}
 					<div className={`absolute inset-0 flex justify-around items-center`} >
-						<motion.div variants={fadeIn('', 'spring', 0.2, 1)} initial="hidden" whileInView="show" onClick={() => window.open(source_code_link, "_blank")} className={`${hovered ? 'black-gradient rounded-full flex justify-center items-center cursor-pointer' : 'hidden'}`} >
+						<motion.div variants={fadeIn('left', 'tween', 0, 0.2)} initial="hidden" whileInView="show" onClick={() => window.open(source_code_link, "_blank")} className={`${hovered ? 'black-gradient rounded-full flex justify-center items-center cursor-pointer' : 'hidden'}`} >
 							<img src={github} alt="github" className="w-16 h-16" />
 						</motion.div>
 
-						<motion.div variants={fadeIn('', 'spring', 0.2, 1)} initial="hidden" whileInView="show" onClick={() => window.open(demo_link, "_blank")} className={`${hovered ? 'black-gradient rounded-full flex justify-center items-center cursor-pointer' : 'hidden'}`} >
+						<motion.div variants={fadeIn('right', 'tween', 0, 0.2)} initial="hidden" whileInView="show" onClick={() => window.open(demo_link, "_blank")} className={`${hovered ? 'black-gradient rounded-full flex justify-center items-center cursor-pointer' : 'hidden'}`} >
 							<img src={laptop} alt="demo" className="w-16 h-16 " />
 						</motion.div>
 					</div>

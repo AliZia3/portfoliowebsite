@@ -76,7 +76,7 @@ const Navbar = () => {
 				{/* Navbar Links */}
 				<ul className="hidden lg:flex gap-x-24">
 					{navLinks.map((link) => (
-						<li key={link.id} className={`${active === link.title ? "text-white" : "text-secondary"} hover:text-blue-500 hover:scale-95 hover:opacity-80 duration-300 ease-in-out text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
+						<li key={link.id} className={`${active === link.title ? "text-white border-b-2 duration-0" : "text-secondary border-b-0 duration-0"} hover:text-blue-500 hover:scale-95 hover:opacity-80 duration-300 ease-in-out text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
 							<a href={`#${link.id}`}>{link.title}</a>
 						</li>
 					))}
