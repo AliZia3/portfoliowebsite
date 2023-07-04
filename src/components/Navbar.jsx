@@ -72,8 +72,8 @@ const Navbar = () => {
 				{/* Navbar Links */}
 				<ul className="hidden lg:flex gap-x-24">
 					{navLinks.map((link) => (
-						<li key={link.id} className={`${active === link.title ? "text-white border-b-2" : "text-secondary border-b-0"}  border-blue-500 hover:text-blue-500 hover:scale-95 hover:opacity-80 ease-in-out text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
-							<a href={`#${link.id}`}>{link.title}</a>
+						<li key={link.id}>
+							<a href={`#${link.id}`} className={`${active === link.title ? "text-white border-b-2" : "text-secondary border-b-0"} border-blue-500 hover:text-blue-500 hover:scale-90 hover:opacity-80 ease-in-out text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)} >{link.title}</a>
 						</li>
 					))}
 				</ul>
@@ -86,11 +86,8 @@ const Navbar = () => {
 					{toggle ? (
 						<ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b" style={{ background: 'linear-gradient(to bottom, rgb(5, 13, 48), rgb(3, 10, 38))' }}>
 							{navLinks.map((link) => (
-								<li key={link.id} className={`${active === link.title ? "text-white text-4xl" : "text-secondary"} font-poppins font-medium cursor-pointer text-3xl px-4 capitalize py-6`} onClick={() => {
-									setActive(link.title)
-									setToggle(!toggle)
-								}}>
-									<a href={`#${link.id}`}>{link.title}</a>
+								<li key={link.id} className={`font-poppins font-medium cursor-pointer text-3xl px-4 capitalize py-6`}>
+									<a href={`#${link.id}`} className={`${active === link.title ? "text-white text-4xl" : "text-secondary"}`} onClick={() => { setActive(link.title); setToggle(!toggle); }} >{link.title}</a>
 								</li>
 							))}
 						</ul>
