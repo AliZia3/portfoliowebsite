@@ -19,6 +19,10 @@ const Navbar = () => {
 			} else {
 				setScrolled(false);
 			}
+
+			if(window.scrollY < 20){
+				setActive('')
+			}
 		};
 		
 		window.addEventListener('scroll', onScroll);
@@ -33,11 +37,6 @@ const Navbar = () => {
 		const projectsSection = document.getElementById("Projects");
 		const contactSection = document.getElementById("Contact");
 		const sections = [aboutSection, experienceSection, projectsSection, contactSection]
-		const handleScroll = () => {
-			if(window.scrollY < 20){
-				setActive('')
-			}
-		}
 
 		const observer = new IntersectionObserver(([entry])=>{
 			if (entry.isIntersecting){
@@ -50,14 +49,11 @@ const Navbar = () => {
 		sections.forEach(section=>{
 			observer.observe(section)
 		})
-
-		window.addEventListener('scroll', handleScroll)
 	
 	  	return () => {
 			sections.forEach(section=>{
 				observer.unobserve(section)
 			})
-			window.removeEventListener('scroll', handleScroll)
 	  	}
 	}, [])
 

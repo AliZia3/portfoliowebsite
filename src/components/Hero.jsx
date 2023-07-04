@@ -15,7 +15,7 @@ const Hero = () => {
 				<source type="video/mp4" src={background} />
 			</video>
 
-			<motion.div variants={zoomIn(0.5, 1)} initial="hidden" whileInView="show" className={`absolute inset-0 flex flex-col items-center justify-center gap-6`}>
+			<motion.div variants={zoomIn(0, 1)} initial="hidden" whileInView="show" className={`absolute inset-0 flex flex-col items-center justify-center gap-6`}>
 				<h1 className={`${styles.heroHeadText}`}>Hey, I'm <span className="text-sky-500">Ali</span></h1>
 				<div className={`${styles.heroSubText} text-white-100 flex flex-col justify-center items-center`}> 
 					<p>A Third Year Software Engineering</p> 
@@ -23,9 +23,9 @@ const Hero = () => {
 				</div>
 
 				<ul className="flex gap-10">
-					{socialLinks.map(({ id, icon, href, download }) => (
-						<li key={id} className={'hover:scale-95 hover:opacity-80 duration-300 ease-in-out hover:text-blue-500'}>
-							<a href={href} className='' download={download} target='_blank' rel='noreferrer'>
+					{socialLinks.map(({ id, title, icon, href, download }) => (
+						<li key={id} className={'hover:scale-95 hover:opacity-80 duration-300 ease-in-out hover:text-blue-500 flex flex-col justify-center items-center'}>
+							<a href={href} className='' download={download} target='_blank' rel='noreferrer' title={title}>
 								{icon({ size: 40 })}
 							</a>
 						</li>
