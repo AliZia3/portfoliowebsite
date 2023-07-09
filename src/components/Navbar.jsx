@@ -60,7 +60,7 @@ const Navbar = () => {
 
 	return (
 		// Full Nav Bar
-		<nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : ''} duration-300`} >
+		<nav className={`${styles.paddingX} w-full flex items-center py-6 fixed top-0 z-20 ${scrolled ? "bg-primary" : ''} duration-300`} >
 			{/* Navbar Content */}
 			<div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
 
@@ -73,7 +73,7 @@ const Navbar = () => {
 				<ul className="hidden lg:flex gap-x-24">
 					{navLinks.map((link) => (
 						<li key={link.id}>
-							<a href={`#${link.id}`} className={`${active === link.title ? "text-white border-b-2" : "text-secondary border-b-0"} border-blue-500 hover:text-blue-500 hover:scale-90 hover:opacity-80 ease-in-out text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)} >{link.title}</a>
+							<a href={`#${link.id}`} className={`${active === link.title ? "text-white border-b-2" : "text-secondary border-b-0"} border-blue-600 hover:text-blue-600 hover:scale-90 hover:opacity-80 ease-in-out text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)} >{link.title}</a>
 						</li>
 					))}
 				</ul>

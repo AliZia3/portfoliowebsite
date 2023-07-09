@@ -28,14 +28,14 @@ import { BallCanvas } from "./canvas";
 
 const About = () => {
 	return (
-		<section id='About' className="mt-3 flex flex-col items-center">
+		<section id='About' className="mt-16 flex flex-col items-center">
 			{/* Text */}
 			<motion.div variants={textVariant()} initial="hidden" whileInView="show" >
 				<h2 className={styles.sectionHeadText}>About Me</h2>
 			</motion.div>
 
 			{/* Text */}
-			<motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]" initial="hidden" whileInView="show" >
+			<motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[16px] max-w-3xl leading-[30px]" initial="hidden" whileInView="show" >
 				With a blend of creative problem-solving and technical
 				expertise, I strive to bring innovation to life through coding.
 				Whether it's developing intuitive user interfaces, crafting
@@ -44,6 +44,12 @@ const About = () => {
 				engineering. Through personal projects and rigorous coursework,
 				I have honed my skills in various languages, allowing me to
 				transform ideas into functional projects.
+				<br />
+				<br />
+				Currently, I'm studying <span className="text-blue-600">Software Engineering</span> at <span className="text-blue-600">McMaster University</span> and seeking internships for Fall 2023.
+				<br />
+				<br />
+				I have <span className="text-blue-600">experience</span> with:
 			</motion.p>
 
 			{/* Cards */}

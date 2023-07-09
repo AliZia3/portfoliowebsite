@@ -32,14 +32,15 @@ import laptop from "./projects/laptop.png";
 import drivetest from './projects/python/drivetest.png'
 import imageclassifier from './projects/python/imageclassifier.jpg'
 import plwinpredictor from './projects/python/premierleague.png'
+import recycling from './projects/python/recycling.png'
 
 import MERNstagram from './projects/web/MERNstagram.png'
 import MERNchat from './projects/web/MERNchat.png'
 import minigamesweb from './projects/web/minigamesweb.png'
+import weather from './projects/web/weather.png'
 
 import piratenkapern from './projects/java/piratenkapern.jpg'
 import islandgenerator from './projects/java/islandgenerator.png'
-// import plwinpredictor from './projects/python/premierleague.png'
 
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { BiSolidFileDoc } from 'react-icons/bi'
@@ -49,11 +50,13 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 export {
   logo,
   drivetest,
+  recycling,
   imageclassifier,
   plwinpredictor,
   MERNchat,
   MERNstagram,
   minigamesweb,
+  weather,
   piratenkapern,
   islandgenerator,
   background,

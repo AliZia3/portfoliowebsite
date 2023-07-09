@@ -48,7 +48,7 @@ const ProjectCard = ({ index, name, description, image, source_code_link, demo_l
 				{/* Tech Tags */}
 				<div className="mt-5 flex flex-wrap justify-center items-center gap-5 w-full">
 					{tags.map((tag, index) => (
-						<p key={index} className="bg-indigo-900 p-2 rounded-xl text-[11px]"> {tag}</p>
+						<p key={index} className="bg-blue-800 p-2 rounded-xl text-[11px]"> {tag}</p>
 					))}
 					
 					{/* <p className="bg-indigo-900 p-2 rounded-full" >MongoDB</p> */}
@@ -82,9 +82,9 @@ const Projects = () => {
 
 			{/* w-48 h-16 */}
 			<div className="bg-slate-600 flex rounded-full overflow-hidden mt-14">
-				<button onClick={()=>setActive('python')} className={`${active === 'python' ? 'bg-indigo-800' : 'hover:opacity-60'} w-28 h-14 sm:w-48 rounded-full hover:bg-indigo-800 duration-200`}>Python</button>
-				<button onClick={()=>setActive('java')} className={`${active === 'java' ? 'bg-indigo-800' : 'hover:opacity-60'} w-28 h-14 sm:w-48 rounded-full hover:bg-indigo-800 duration-200`}>Java</button>
-				<button onClick={()=>setActive('web')} className={`${active === 'web' ? 'bg-indigo-800' : 'hover:opacity-60'} w-28 h-14 sm:w-48 rounded-full hover:bg-indigo-800 duration-200`}>Web</button>
+				<button onClick={()=>setActive('python')} className={`${active === 'python' ? 'bg-blue-800' : 'hover:opacity-60'} w-28 h-14 sm:w-48 rounded-full hover:bg-blue-800 duration-200`}>Python</button>
+				<button onClick={()=>setActive('java')} className={`${active === 'java' ? 'bg-blue-800' : 'hover:opacity-60'} w-28 h-14 sm:w-48 rounded-full hover:bg-blue-800 duration-200`}>Java</button>
+				<button onClick={()=>setActive('web')} className={`${active === 'web' ? 'bg-blue-800' : 'hover:opacity-60'} w-28 h-14 sm:w-48 rounded-full hover:bg-blue-800 duration-200`}>Web</button>
 			</div>
 
 			<div className="mt-20 flex flex-wrap gap-8 justify-center">

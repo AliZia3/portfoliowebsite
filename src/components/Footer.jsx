@@ -13,8 +13,8 @@ const Footer = () => {
 			<motion.div variants={slideIn('left', 'spring', 0.05, 1)} initial="hidden" whileInView="show" className='w-full flex flex-col gap-7 sm:flex-row justify-between items-center max-w-7x1'>
 				
 				<ul className="flex gap-10">
-					{socialLinks.map(({id,icon, href, download}) => (
-						<li key={id} className={'hover:scale-95 hover:opacity-80 duration-300 ease-in-out hover:text-blue-500'}>
+					{socialLinks.map(({ title, icon, href, download}) => (
+						<li key={title} className={'hover:scale-95 hover:opacity-80 duration-300 ease-in-out hover:text-blue-500'}>
 							<a href={href} className='' download={download} target='_blank' rel='noreferrer'>
 								{icon({ size: 40 })}
 							</a>
