@@ -188,7 +188,7 @@ export const pythonProjects = [
 	},
 
 	{
-		name: "Recylcing System",
+		name: "Recycling System",
 		description: 'An integrated system designed to streamline recycling operations, encompassing features such as waste sorting, recycling bin tracking, and analytics to promote effective recycling practices.',
 		image: recycling,
 		source_code_link: 'https://github.com/AliZia3/Recycling-System',
