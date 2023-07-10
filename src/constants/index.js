@@ -193,7 +193,7 @@ export const pythonProjects = [
 		image: recycling,
 		source_code_link: 'https://github.com/AliZia3/Recycling-System',
 		demo_link: 'https://www.quanser.com/blog/one-of-a-kind-course-for-first-year-engineering-students/',
-		tags: ['Python', 'Selenium']
+		tags: ['Python', 'Quanser', "Raspberry Pi"]
 	},
 
 	// {
