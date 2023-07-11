@@ -174,8 +174,8 @@ export const pythonProjects = [
 		name: "Premier League Win Predictor",
 		description: 'A program that utilizes historical match data and statistical analysis to predict and provide insights into the potential outcome of Premier League matches.',
 		image: plwinpredictor,
-		source_code_link: '',
-		demo_link: '',
+		source_code_link: 'https://github.com/AliZia3/Premier-League-Win-Predictor/tree/main',
+		demo_link: '/PL-Win-Predictor.zip',
 		tags: ['Python', 'Pandas', 'SciKit-Learn', 'FastAPI']
 	},
 	{
@@ -189,7 +189,7 @@ export const pythonProjects = [
 
 	{
 		name: "Recycling System",
-		description: 'An integrated system designed to streamline recycling operations, encompassing features such as waste sorting, recycling bin tracking, and analytics to promote effective recycling practices.',
+		description: 'A system designed to streamline recycling operations. Uses onboard sensors to sort recyclable containers according to mass and material type.',
 		image: recycling,
 		source_code_link: 'https://github.com/AliZia3/Recycling-System',
 		demo_link: 'https://www.quanser.com/blog/one-of-a-kind-course-for-first-year-engineering-students/',
