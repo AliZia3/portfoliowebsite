@@ -182,8 +182,8 @@ export const pythonProjects = [
 		name: "Image Classifier",
 		description: 'A program that employs machine learning techniques to categorize and classify images based on their visual features, enabling automated analysis of large image datasets.',
 		image: imageclassifier,
-		source_code_link: '',
-		demo_link: '',
+		source_code_link: 'https://github.com/AliZia3/Vehicle-Image-Classifier',
+		demo_link: 'https://vehicleimageclassifier.streamlit.app',
 		tags: ['Python', 'Pandas', 'Keras', 'TensorFlow'],
 	},
 
