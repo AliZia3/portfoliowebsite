@@ -143,28 +143,23 @@ export const experiences = [
 		iconBg: "#E6DEDD",
 		date: "June 2023 - Present",
 		points: [
-			"Incoming Member !!!",
-			// "",
-			// "",
-			// "",
-			// "Collaborated with the administration team to streamline communication processes, resulting in a 20% increase in efficiency and timely decision-making",
-			// "Successfully expanded the team's network within the McMaster community by organizing information sessions and workshops, leading to a 30% increase in team membership",
-			// "Implemented cost-effective logistics strategies for events, such as the Ontario Rover Rally, resulting in a 15% reduction in expenses while maintaining high-quality experiences for participants",
-			// "Proficiently utilized Microsoft 365, Google, and other event organizing platforms to ensure smooth coordination and seamless execution of team activities and events.",
+			"Collaborated with the administration team to streamline communication processes, resulting in increased efficiency and timely decision-making",
+			"Successfully expanded the team's network within the McMaster community by organizing information sessions and workshops, increasing team membership",
+			"Implemented cost-effective logistics strategies for events, such as the Ontario Rover Rally, resulting in a 15% reduction in expenses while maintaining high-quality experiences for participants",
+			"Proficiently utilized various event organizing platforms to ensure smooth coordination and seamless execution of team activities and events.",
 		],
 	},
 	{
 		title: "Vice President of Events",
-		company_name:
-			"Institute of Transportation Engineers McMaster Student Chapter",
+		company_name: "Institute of Transportation Engineers McMaster Student Chapter",
 		icon: ite,
 		iconBg: "#E6DEDD",
 		date: "June 2023 - Present",
 		points: [
-			"Incoming Member !!!", 
-			// "", 
-			// "", 
-			// "",
+			"Overseeing room bookings (general meeting rooms and event rooms/venues) and EOHSS forms", 
+			"Conducting the purchasing and recording of all products required for events", 
+			"Acting as the main liaison to external contacts for event coordination", 
+			"General communication with the ITE Executive team ",
 		],
 	},
 ];
@@ -250,7 +245,7 @@ export const pythonProjects = [
 
 export const webProjects = [
 	{
-		name: "MERNstagram",
+		name: "MERNChat (In Progress)",
 		description: 'A full-stack web application designed to resemble a social media app for connecting with other users. Users can create profiles, upload photos, follow other users and more.',
 		image: MERNstagram,
 		source_code_link: '',
@@ -263,7 +258,7 @@ export const webProjects = [
 		image: weather,
 		source_code_link: 'https://github.com/AliZia3/WorldWeatherWeb',
 		demo_link: 'https://worldweatherweb.netlify.app',
-		tags: ['HTML', 'CSS', 'JavaScript', 'APIs']
+		tags: ['React', 'Tailwind CSS', 'APIs']
 	},
 	// {
 	// 	name: "MERNChat",
