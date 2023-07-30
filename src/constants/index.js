@@ -28,6 +28,7 @@ import {
 	ite,
 	mmrt,
 	ramacentre,
+	ramacomputer,
 	threejs,
 	FaGithub,
 	FaLinkedin,
@@ -123,21 +124,22 @@ export const skills = [
 ];
 
 export const experiences = [
+	// Colors: #383E56->Dark, #E6DEDD->Light
 	{
-		title: "Repair Technician",
-		company_name: "Rama Centre",
-		icon: ramacentre,
-		iconBg: "#383E56",
-		date: "May 2022 - August 2022",
+		title: "Computer Technician",
+		company_name: "Rama Computers",
+		icon: ramacomputer,
+		iconBg: "#E6DEDD",
+		date: "September 2020 - December 2020",
 		points: [
 			"Managed 10+ repairs daily and achieved a 100% satisfaction rate in repair efficiency and on-time completion",
-			"Effectively identified and resolved a wide range of technical issues, reducing rework time by 35%",
+			"Effectively identified and resolved a wide range of technical issues, achieving a 95% success rate",
 			"Proactively identified and resolved potential issues in repair execution, boosting repair success rates by 85%",
-			"Maintained efficient documentation of repair processes, providing valuable data for analysis and improvement, resulting in a 15% reduction in recurring repair issues",
+			"Maintained efficient documentation of repair processes, providing valuable data for analysis and improvement, resulting in a 20% reduction in recurring repair issues",
 		],
 	},
 	{
-		title: "Outreach Sub-Team",
+		title: "Event Organizer",
 		company_name: "McMaster Mars Rover Team",
 		icon: mmrt,
 		iconBg: "#E6DEDD",
@@ -174,7 +176,7 @@ export const pythonProjects = [
 		tags: ['Python', 'Pandas', 'SciKit-Learn', 'FastAPI']
 	},
 	{
-		name: "Image Classifier",
+		name: "Vehicle Image Classifier",
 		description: 'A program that employs machine learning techniques to categorize and classify images based on their visual features, enabling automated analysis of large image datasets.',
 		image: imageclassifier,
 		source_code_link: 'https://github.com/AliZia3/Vehicle-Image-Classifier',
@@ -244,10 +246,18 @@ export const pythonProjects = [
 ]
 
 export const webProjects = [
+	// {
+	// 	name: "MERNChat (In Progress)",
+	// 	description: 'A full-stack web application designed to resemble a social media app for connecting with other users. Users can create profiles, upload photos, follow other users and more.',
+	// 	image: MERNstagram,
+	// 	source_code_link: '',
+	// 	demo_link: '',
+	// 	tags: ['MongoDB', 'Express', 'React', 'Node.js']
+	// },
 	{
-		name: "MERNChat (In Progress)",
-		description: 'A full-stack web application designed to resemble a social media app for connecting with other users. Users can create profiles, upload photos, follow other users and more.',
-		image: MERNstagram,
+		name: "MERN-Chat (In Progress)",
+		description: 'A full-stack chat application that allows real-time communication between users, providing features such as private messaging, group chats, and media sharing.',
+		image: MERNchat,
 		source_code_link: '',
 		demo_link: '',
 		tags: ['MongoDB', 'Express', 'React', 'Node.js']
@@ -260,14 +270,6 @@ export const webProjects = [
 		demo_link: 'https://worldweatherweb.netlify.app',
 		tags: ['React', 'Tailwind CSS', 'APIs']
 	},
-	// {
-	// 	name: "MERNChat",
-	// 	description: 'A full-stack chat application that allows real-time communication between users, providing features such as private messaging, group chats, and media sharing.',
-	// 	image: MERNchat,
-	// 	source_code_link: '',
-	// 	demo_link: '',
-	// 	tags: ['MongoDB', 'Express', 'React', 'Node.js']
-	// },
 	{
 		name: "MiniGamesWeb",
 		description: 'A web-based platform hosting a collection of mini-games, offering users an enjoyable and interactive experience with various casual games accessible from a single website.',
@@ -292,7 +294,7 @@ export const webProjects = [
 
 export const javaProjects = [
 	// {
-	// 	name: "JobIt",
+	// 	name: "Job Tracker",
 	// 	description: 'A tool to streamline the job application process by providing features for tracking job listings, storing application details, and managing interview schedules/follow-ups.',
 	// 	image: MERNchat,
 	// 	source_code_link: '',

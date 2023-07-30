@@ -25,6 +25,7 @@ import mysql from "./skills/mysql.png";
 import ite from "./company/ite.png";
 import mmrt from "./company/mmrt.jpg";
 import ramacentre from "./company/ramacentre.jpg";
+import ramacomputer from "./company/ramacomputer.jpg";
 
 import github from "./projects/github.png";
 import laptop from "./projects/laptop.png";
@@ -85,6 +86,7 @@ export {
   ite,
   mmrt,
   ramacentre,
+  ramacomputer,
   FaGithub,
   FaLinkedin,
   BiSolidFileDoc,
