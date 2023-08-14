@@ -130,7 +130,7 @@ export const experiences = [
 		company_name: "Rama Computers",
 		icon: ramacomputer,
 		iconBg: "#E6DEDD",
-		date: "September 2020 - December 2020",
+		date: "September 2020 - December 2020 & May 2022 - September 2022",
 		points: [
 			"Managed 10+ repairs daily and achieved a 100% satisfaction rate in repair efficiency and on-time completion",
 			"Effectively identified and resolved a wide range of technical issues, achieving a 95% success rate",
