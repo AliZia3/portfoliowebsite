@@ -119,6 +119,21 @@
   transform: translateZ(0);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: rgba(136, 136, 136, 0.281); */
+  /* background: #3246a8; */
+  background: #273eb0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @keyframes mulShdSpin {
 
   0%,
