@@ -10,21 +10,21 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { BallCanvas } from "./canvas";
 
-// const ServiceCard = ({ id, name, icon }) => {
-// 	return (
-// 		// Cards
-// 		<Tilt className="xs:w-[180px] w-full">
-// 			<motion.div variants={fadeIn("right", "spring", 0.2 * id, 0.75)} className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card" >
-// 				<div options={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary rounded-[20px] py-5 px-12 flex justify-evenly items-center flex-col" >
-// 					<img src={icon} alt={name} className="w-16 h-16 object-contain" />
-// 					<h3 className="text-white text-[20px] font-bold text-center">
-// 						{name}
-// 					</h3>
-// 				</div>
-// 			</motion.div>
-// 		</Tilt>
-// 	);
-// };
+const ServiceCard = ({ id, name, icon }) => {
+	return (
+		// Cards
+		<Tilt className="xs:w-[180px] w-full">
+			<motion.div variants={fadeIn("right", "spring", 0.2 * id, 0.75)} className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card" >
+				<div options={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary rounded-[20px] py-5 px-12 flex justify-evenly items-center flex-col" >
+					<img src={icon} alt={name} className="w-16 h-16 object-contain" />
+					<h3 className="text-white text-[20px] font-bold text-center">
+						{name}
+					</h3>
+				</div>
+			</motion.div>
+		</Tilt>
+	);
+};
 
 const About = () => {
 	return (
@@ -35,7 +35,7 @@ const About = () => {
 			</motion.div>
 
 			{/* Text */}
-			<motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[16px] max-w-3xl leading-[30px]" initial="hidden" whileInView="show" >
+			<motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[18px] max-w-3xl leading-[30px]" initial="hidden" whileInView="show" >
 				With a blend of creative problem-solving and technical
 				expertise, I strive to bring innovation to life through coding.
 				Whether it's developing intuitive user interfaces, crafting
@@ -46,28 +46,28 @@ const About = () => {
 				transform ideas into functional projects.
 				<br />
 				<br />
-				Currently, I'm studying <span className="text-blue-600">Software Engineering</span> at <span className="text-blue-600">McMaster University</span> and seeking internships for Fall 2023.
+				Currently, I'm studying <span className="text-blue-600">Software Engineering</span> at <span className="text-blue-600">McMaster University</span> and seeking internships for Winter 2024.
 				<br />
 				<br />
 				I have <span className="text-blue-600">experience</span> with:
 			</motion.p>
 
 			{/* Cards */}
-			{/* <div className='mt-20 flex flex-wrap gap-10 justify-center'>
+			<div className='mt-10 flex flex-wrap gap-10 justify-center'>
 				{skills.map(({id, name, icon}) => (
 					<ServiceCard id={id} name={name} icon={icon}/>
 				))}
-			</div> */}
+			</div>
 
 			{/* Balls */}
-			<motion.div variants={fadeIn('', 'tween', 0.2, 1)} initial="hidden" whileInView="show" className="flex flex-wrap justify-center gap-10 mt-14 sm:grid sm:grid-cols-5 ">
+			{/* <motion.div variants={fadeIn('', 'tween', 0.2, 1)} initial="hidden" whileInView="show" className="flex flex-wrap justify-center gap-10 mt-14 sm:grid sm:grid-cols-5 ">
 				{skills.map(({ name, icon }) => (
 					<div className={`w-28 h-28 relative flex flex-col items-center justify-center `} key={name} >
 						<BallCanvas icon={icon} />
 						{name}
 					</div>
 				))}
-			</motion.div>
+			</motion.div> */}
 		</section>
 	);
 };

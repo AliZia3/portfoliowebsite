@@ -121,7 +121,7 @@ export const skills = [
 		icon: mongodb,
 	},
 	{
-		name: "Tailwind CSS",
+		name: "Tailwind",
 		icon: tailwind,
 	},
 	{
