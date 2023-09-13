@@ -20,11 +20,14 @@ import {
 	redux,
 	tailwind,
 	nodejs,
+	express,
 	mongodb,
 	mysql,
 	git,
 	figma,
 	docker,
+	c,
+	matlab,
 	ite,
 	mmrt,
 	ramacentre,
@@ -94,12 +97,40 @@ export const skills = [
 		icon: javascript,
 	},
 	{
+		name: "C",
+		icon: c,
+	},
+	{
+		name: "MATLAB",
+		icon: matlab,
+	},
+	{
 		name: "React",
 		icon: reactjs,
 	},
 	{
-		name: "Node.js",
+		name: "Node",
 		icon: nodejs,
+	},
+	{
+		name: "Express",
+		icon: express,
+	},
+	{
+		name: "MongoDB",
+		icon: mongodb,
+	},
+	{
+		name: "Tailwind CSS",
+		icon: tailwind,
+	},
+	{
+		name: "HTML",
+		icon: html,
+	},
+	{
+		name: "CSS",
+		icon: css,
 	},
 	{
 		name: "MySQL",
@@ -113,14 +144,7 @@ export const skills = [
 		name: "JUnit",
 		icon: junit,
 	},
-	{
-		name: "HTML",
-		icon: html,
-	},
-	{
-		name: "CSS",
-		icon: css,
-	},
+	
 ];
 
 export const experiences = [
@@ -130,9 +154,9 @@ export const experiences = [
 		company_name: "Rama Computers",
 		icon: ramacomputer,
 		iconBg: "#E6DEDD",
-		date: "September 2020 - December 2020 & May 2022 - September 2022",
+		date: "September 2020 - December 2020",
 		points: [
-			"Managed 10+ repairs daily and achieved a 100% satisfaction rate in repair efficiency and on-time completion",
+			"Managed 8+ repairs daily and achieved a 100% satisfaction rate in repair efficiency and on-time completion",
 			"Effectively identified and resolved a wide range of technical issues, achieving a 95% success rate",
 			"Proactively identified and resolved potential issues in repair execution, boosting repair success rates by 85%",
 			"Maintained efficient documentation of repair processes, providing valuable data for analysis and improvement, resulting in a 20% reduction in recurring repair issues",
@@ -143,7 +167,7 @@ export const experiences = [
 		company_name: "McMaster Mars Rover Team",
 		icon: mmrt,
 		iconBg: "#E6DEDD",
-		date: "June 2023 - Present",
+		date: "May 2023 - Present",
 		points: [
 			"Collaborated with the administration team to streamline communication processes, resulting in increased efficiency and timely decision-making",
 			"Successfully expanded the team's network within the McMaster community by organizing information sessions and workshops, increasing team membership",

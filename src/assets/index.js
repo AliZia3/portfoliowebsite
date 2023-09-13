@@ -12,6 +12,7 @@ import html from "./skills/html.png";
 import javascript from "./skills/javascript.png";
 import mongodb from "./skills/mongodb.png";
 import nodejs from "./skills/nodejs.png";
+import express from "./skills/express.png";
 import reactjs from "./skills/reactjs.png";
 import redux from "./skills/redux.png";
 import tailwind from "./skills/tailwind.png";
@@ -21,6 +22,8 @@ import java from "./skills/java.png";
 import python from "./skills/python.png";
 import junit from "./skills/junit.png";
 import mysql from "./skills/mysql.png";
+import c from "./skills/c.png"
+import matlab from "./skills/matlab.png"
 
 import ite from "./company/ite.png";
 import mmrt from "./company/mmrt.jpg";
@@ -78,11 +81,14 @@ export {
   mysql,
   mongodb,
   nodejs,
+  express,
   reactjs,
   redux,
   tailwind,
   typescript,
   threejs,
+  c,
+  matlab,
   ite,
   mmrt,
   ramacentre,
