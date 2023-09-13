@@ -22,7 +22,7 @@ import java from "./skills/java.png";
 import python from "./skills/python.png";
 import junit from "./skills/junit.png";
 import mysql from "./skills/mysql.png";
-import c from "./skills/c.png"
+import c from "./skills/C.png"
 import matlab from "./skills/matlab.png"
 
 import ite from "./company/ite.png";
