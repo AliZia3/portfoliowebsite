@@ -27,8 +27,8 @@ import matlab from "./skills/matlab.png"
 
 import ite from "./company/ite.png";
 import mmrt from "./company/mmrt.jpg";
-import ramacentre from "./company/ramacentre.jpg";
 import ramacomputer from "./company/ramacomputer.jpg";
+import macai from "./company/macai.png"
 
 import github from "./projects/github.png";
 import laptop from "./projects/laptop.png";
@@ -39,12 +39,13 @@ import plwinpredictor from './projects/python/premierleague.png'
 import recycling from './projects/python/recycling.png'
 
 import MERNstagram from './projects/web/MERNstagram.png'
-import MERNchat from './projects/web/MERNchat.png'
+import easychat from './projects/web/easychat.png'
 import minigamesweb from './projects/web/minigamesweb.png'
 import weather from './projects/web/weather.png'
 
 import piratenkapern from './projects/java/piratenkapern.jpg'
 import islandgenerator from './projects/java/islandgenerator.png'
+import jobtracker from './projects/java/jobtracker.png'
 
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { BiSolidFileDoc } from 'react-icons/bi'
@@ -57,12 +58,13 @@ export {
   recycling,
   imageclassifier,
   plwinpredictor,
-  MERNchat,
+  easychat,
   MERNstagram,
   minigamesweb,
   weather,
   piratenkapern,
   islandgenerator,
+  jobtracker,
   background,
   background1,
   github,
@@ -91,7 +93,7 @@ export {
   matlab,
   ite,
   mmrt,
-  ramacentre,
+  macai,
   ramacomputer,
   FaGithub,
   FaLinkedin,
