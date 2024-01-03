@@ -10,11 +10,11 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { BallCanvas } from "./canvas";
 
-const ServiceCard = ({ id, name, icon }) => {
+const ServiceCard = ({ index, name, icon }) => {
 	return (
 		// Cards
 		<Tilt className="w-[80px] lg:w-[160px]">
-			<motion.div variants={fadeIn("right", "spring", 0.2 * id, 0.75)} className="green-pink-gradient p-[1px] rounded-[20px] shadow-card" >
+			<motion.div variants={fadeIn("", "fade", 0.2 * index, 1)} initial="hidden" whileInView="show" className="green-pink-gradient p-[1px] rounded-[20px] shadow-card" >
 				<div options={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary rounded-[20px] py-2 lg:py-5 px-1 lg:px-12 flex justify-evenly items-center flex-col">
 					<img src={icon} alt={name} className="w-16 h-16 object-contain" />
 					<h3 className="text-white text-[12px] lg:text-[16px] font-bold text-center">
@@ -30,7 +30,7 @@ const About = () => {
 	return (
 		<section id='About' className="mt-16 flex flex-col items-center">
 			{/* Text */}
-			<motion.div variants={textVariant()} initial="hidden" whileInView="show" >
+			<motion.div variants={textVariant()} initial="hidden" whileInView="show">
 				<h2 className={styles.sectionHeadText}>About Me</h2>
 			</motion.div>
 
@@ -54,8 +54,8 @@ const About = () => {
 
 			{/* Cards */}
 			<div className='mt-8 flex flex-wrap lg:grid lg:grid-cols-5 gap-8 justify-center'>
-				{skills.map(({id, name, icon}) => (
-					<ServiceCard id={id} name={name} icon={icon}/>
+				{skills.map(({index, name, icon}) => (
+					<ServiceCard index={index} name={name} icon={icon}/>
 				))}
 			</div>
 
